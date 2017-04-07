@@ -99,9 +99,9 @@ gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() 
     gulp.watch('js/**/*.js', browserSync.reload);
 });
 
-/**
- * Push build to gh-pages
- */
+
+//Push build to gh-pages
+ 
 gulp.task('deploy', function () {
   return gulp.src("./dist/**/*")
     .pipe(deploy());
